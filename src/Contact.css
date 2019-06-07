@@ -1,34 +1,20 @@
-.Contact {
-    text-align: center;
-  }
-  
-  .Contact-logo {
-    animation: Contact-logo-spin infinite 20s linear;
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  .Contact-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .Contact-link {
-    color: #61dafb;
-  }
-  
-  @keyframes Contact-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
+.contact-card {
+    width: 450px;
+    border: 4px double rgb(245, 73, 73);
+    padding: 50px;
+
+}
+
+body {
+    color: #6E6E6E;
+    background-color: #f7f7f7; 
+    font-family: comic sans ms;
+    line-height:13px;
+    font-size:14px;
+    padding: 0p;
+    margin: 0px;
+    background-image:url(http://thepatternlibrary.com/img/ao.gif); 
+    background-attachment: fixed;
+    background-repeat: repeat;
+}
+     

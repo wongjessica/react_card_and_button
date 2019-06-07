@@ -1,42 +1,25 @@
-import React, {Component} from 'react';
-import ReactDOM from 'react-dom'
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-//import React, {Component} from 'react';
-import logo from './logo.svg';
 import './Contact.css';
-/*
-function Contact() {
-  return (
-    <div className="Contact">
-      <header className="Contact-header">
-        <img src={logo} className="Contact-logo" alt="logo" />
-        <p>
-          Edit <code>src/Contact.js</code> and save to reload.
-        </p>
-        <a
-          className="Contact-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Hello World
-        </a>
-      </header>
-    </div>
-  );
+
+class CardComponent extends Component {
+    render() {
+        return (
+            <div className="contact-card">
+                <h3>Name: {this.props.name}</h3>
+                <p>Mobile Number: {this.props.mobileNumber}</p>
+                <p>Work Number: {this.props.workNumber}</p>
+                <p>Email: {this.props.email}</p>
+            </div>
+            );
+    }
+};
+
+CardComponent.propTypes = {
+    name: PropTypes.string.isRequired,
+    mobileNumber: PropTypes.string.isRequired,
+    workNumber: PropTypes.string,
+    email: PropTypes.string.isRequired
 }
-*/
 
-class contactCard extends Component {
-  render() {
-  return <h1>Hello {this.props.name}!</h1>
-  }
-};
-
-contactCard.propTypes = {
-  name: PropTypes.string
-};
-  
-  ReactDOM.render(<contactCard name="Tom" />)
-
-export default contactCard;
+export default CardComponent;
