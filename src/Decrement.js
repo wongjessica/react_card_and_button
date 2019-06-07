@@ -11,7 +11,7 @@ class Decrement extends Component {
 
     dec = () => {
         if (this.state.num <= 0) {
-            alert("Cannot be less than zero");
+            alert("Error:Number is less than 0");
         } else {
             this.setState({num: this.state.num - 1});
         }
